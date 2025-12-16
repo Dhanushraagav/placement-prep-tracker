@@ -7,6 +7,10 @@ function addTopic() {
   const li = document.createElement("li")
   li.innerText = topic
 
+  li.onclick = () => {
+    li.classList.toggle("completed")
+  }
+
   document.getElementById("topicList").appendChild(li)
   input.value = ""
 }
