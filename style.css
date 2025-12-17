@@ -67,6 +67,11 @@ li {
   color: #f87171;
   font-weight: bold;
 }
+#progress {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
 
 
 
