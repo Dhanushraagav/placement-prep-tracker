@@ -28,6 +28,14 @@ function renderTopic(text, completed) {
     updateProgress()
   }
 
+  li.ondblclick = () => {
+    const newText = prompt("Edit topic", li.firstChild.textContent)
+    if (newText && newText.trim() !== "") {
+      li.firstChild.textContent = newText.trim()
+      saveTopics()
+    }
+  }
+
   const del = document.createElement("span")
   del.innerText = " ×"
   del.className = "delete"
