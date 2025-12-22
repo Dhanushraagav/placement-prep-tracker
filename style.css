@@ -72,6 +72,20 @@ li {
   text-align: center;
   font-weight: bold;
 }
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.filters button {
+  padding: 6px 10px;
+  border-radius: 5px;
+  background: #e5e7eb;
+  cursor: pointer;
+}
+
 
 
 
