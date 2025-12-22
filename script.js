@@ -70,3 +70,21 @@ function updateProgress() {
   }
   document.getElementById("progress").innerText = "Progress: " + percent + "%"
 }
+function showAll() {
+  document.querySelectorAll("#topicList li").forEach(li => {
+    li.style.display = "block"
+  })
+}
+
+function showCompleted() {
+  document.querySelectorAll("#topicList li").forEach(li => {
+    li.style.display = li.classList.contains("completed") ? "block" : "none"
+  })
+}
+
+function showPending() {
+  document.querySelectorAll("#topicList li").forEach(li => {
+    li.style.display = li.classList.contains("completed") ? "none" : "block"
+  })
+}
+
